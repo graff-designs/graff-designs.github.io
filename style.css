@@ -1,0 +1,205 @@
+*{
+	
+	margin:0;
+	padding:0;
+	font-size:100%;
+	font-family: 'Montserrat', sans-serif;
+}
+head{
+	display:none;
+}
+body{
+	height:100%;
+    background:#f2f2f2;
+}
+h1{
+	opacity:0.87;
+}
+a{
+	text-decoration:none;
+	color:inherit;
+    transition:0.2s;
+}
+li>a:hover{
+    color:#FFF9C4;
+}
+.menu>a:hover{
+    color:#FFF9C4;
+}
+.libre{
+    font-family: 'Abhaya Libre', serif;
+}
+.main_container{
+	width:80%;
+	margin-left:20%;
+	height:100%;	
+}
+.header{
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	width:20%;
+	height:100%;
+	float:left;
+	background:#3E2723;
+}
+.hContainer{
+	height:100%;
+	padding-right:20px;
+	padding-top:50px;
+}
+nav{
+	float:right;
+    text-align: right;
+	font-size:1.8rem;
+	font-weight:600;
+	color:#fff;
+	opacity:0.87;
+}
+li{
+	padding:5px;
+    list-style: none;
+}
+.banner{
+	width:100%;
+    opacity:0.87;
+	background:url("giraffe.jpg") center top; background-size:cover; height: 600px; overflow:hidden;background-repeat:no-repeat;
+}
+.big{font-size:2.5rem;}
+.biggest{font-size: 4rem;}
+.banner_container{
+    width:auto;
+    height:100%;
+    text-align: left;
+    background: -moz-linear-gradient(289deg, rgba(255,255,0,0.8) 0%, rgba(255,136,0,0.8) 49%, rgba(252,134,0,0.8) 50%, rgba(115,42,0,0.8) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,0,0.8)), color-stop(49%, rgba(255,136,0,0.8)), color-stop(50%, rgba(252,134,0,0.8)), color-stop(100%, rgba(115,42,0,0.8))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(289deg, rgba(255,255,0,0.8) 0%, rgba(255,136,0,0.8) 49%, rgba(252,134,0,0.8) 50%, rgba(115,42,0,0.8) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(289deg, rgba(255,255,0,0.8) 0%, rgba(255,136,0,0.8) 49%, rgba(252,134,0,0.8) 50%, rgba(115,42,0,0.8) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(289deg, rgba(255,255,0,0.8) 0%, rgba(255,136,0,0.8) 49%, rgba(252,134,0,0.8) 50%, rgba(115,42,0,0.8) 100%); /* ie10+ */
+    background: linear-gradient(161deg, rgba(255,255,0,0.8) 0%, rgba(255,136,0,0.8) 49%, rgba(252,134,0,0.8) 50%, rgba(115,42,0,0.8) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFF00', endColorstr='#732A00',GradientType=0 ); /* ie6-9 */
+    padding-left:6%;
+    padding-top:200px;
+    color:#fff;
+}
+.banner_buttons{
+    padding-top: 50px;
+}
+.ban-button{
+    display:inline-block;
+    margin:5px;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    padding:13px 25px;
+    border: #fff 2px solid;
+    transition: 0.2s;
+}
+.ban-button:hover{
+    background:rgba(255, 255, 255, 0.4);
+}
+.content{
+    font-size: 2.0rem;
+    width:100%;
+}
+.container{
+    display:flex;
+    width:80%;
+    height:auto;
+    padding:20px;
+    padding-left:6%;
+}
+
+.designs{
+    opacity:0.8;
+}
+.showcase{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:100%;
+}
+.main-item{
+    width:100%;
+    height:30vw;
+    object-fit: cover;
+    opacity:0.5;
+    transition:0.2s;
+}
+.item{
+    width:47%;
+    height:20vw;
+    padding:1%;
+    object-fit: cover;
+    opacity:0.5;
+    transition:0.2s;
+}
+.item:hover{
+    opacity:0.9;
+}
+.main-item:hover{
+    opacity:0.9;
+}
+footer{
+    width:80%;
+    margin-left:20%;
+    color:#fff;
+    height:100px;
+    background:#3E2723;
+}
+
+.menu{
+    display:none;
+    float:right;
+    font-size: 3rem;
+    color:#fff;
+}
+
+@media only screen and (max-width: 942px) {
+    nav{
+        font-size: 1.2rem;
+        }
+    .content{
+        width:100%;
+        padding:0px;
+    }
+    .container{
+        margin:0px;
+        padding:5px 0;
+        width:100%;
+    }
+    .designs{
+        padding:5px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .menu{display:block;}
+    .hContainer{padding-top: 10px;}
+    nav{
+        display:none;
+    }
+    .banner{
+        display:flex;
+        height:auto;
+    }
+    .banner_container{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .big{font-size:2rem;}
+    .biggest{
+        font-size: 3rem;
+    }
+    .item{
+    width:100%;
+    height:30vw;
+    object-fit: cover;
+    opacity:0.5;
+    transition:0.2s;
+    padding:0px;
+    }
+    .content{
+        font-size: 1.7rem;
+    }
+}
+
